@@ -1,6 +1,8 @@
 # Benchmark AI
 
-**[Open Benchmark AI locally](http://127.0.0.1:8080/)**
+**[Visit Benchmark AI](https://benchmark-ai-wantings.wantings118.chatgpt.site)**
+
+Local preview: [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
 
 A website for exploring publisher-reported and third-party AI benchmark scores across model versions. Source links, evaluation settings, and large score differences remain visible.
 
@@ -12,7 +14,7 @@ From the repository folder, start:
 python3 -m http.server 8080 --bind 127.0.0.1 --directory docs
 ```
 
-Then open **http://127.0.0.1:8080/** in your browser. This address works only on the computer running the server. The repository is private; there is no publicly hosted website.
+Then open **http://127.0.0.1:8080/** in your browser. This address works only on the computer running the server. The GitHub repository remains private. The website is publicly hosted at the link above.
 
 ## Files and data
 
