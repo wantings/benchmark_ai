@@ -1,6 +1,6 @@
 # Benchmark AI
 
-**[Visit Benchmark AI](https://benchmark-ai-wantings.wantings118.chatgpt.site)**
+**[Visit Benchmark AI](https://wantings.github.io/benchmark_ai/)**
 
 Local preview: [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
 
@@ -14,7 +14,7 @@ From this directory, start:
 python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-Then open **http://127.0.0.1:8080/** in your browser. This address works only on the computer running the server. The GitHub repository remains private. The website is publicly hosted at the link above.
+Then open **http://127.0.0.1:8080/** in your browser. This address works only on the computer running the server. The GitHub repository is public. The website is hosted on GitHub Pages at the link above.
 
 ## Files and data
 
