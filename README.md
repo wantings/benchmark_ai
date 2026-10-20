@@ -1,0 +1,21 @@
+# Benchmark AI
+
+**[Open Benchmark AI locally](http://127.0.0.1:8080/)**
+
+A website for exploring publisher-reported and third-party AI benchmark scores across model versions. Source links, evaluation settings, and large score differences remain visible.
+
+## Run locally
+
+From the repository folder, start:
+
+```sh
+python3 -m http.server 8080 --bind 127.0.0.1 --directory docs
+```
+
+Then open **http://127.0.0.1:8080/** in your browser. This address works only on the computer running the server. The repository is private; there is no publicly hosted website.
+
+## Files and data
+
+The website is in `docs/`. Curated datasets and source attribution are in `docs/extracted/`. Raw downloaded HTML, screenshots, full search logs, and local research files are excluded.
+
+Third-party data includes Artificial Analysis public evaluations and Epoch AI data ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Original external sources retain their own attribution; see the website source library. Scores are historical snapshots, and highlighted differences are review signals rather than confirmed contradictions.
