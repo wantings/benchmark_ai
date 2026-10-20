@@ -1,0 +1,4 @@
+# Publish only the minimal static website. Keep research and local files private.
+/*
+!/.gitignore
+!/docs/
