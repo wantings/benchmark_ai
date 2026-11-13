@@ -8,7 +8,7 @@ Official publisher benchmark evidence for 2024–2026, with release counts, comp
 
 The `data` branch contains only the static website and its required data files in `docs/`. Raw reports, downloaded HTML/PDFs, screenshots, research scripts, private workspace files and third-party review datasets are excluded.
 
-Pushing this branch does not change the current GitHub Pages deployment. To serve this version at the website link above, configure Pages to deploy from `data`, folder `/docs`, or merge the reviewed branch into the configured publishing branch.
+GitHub Pages deploys this website from the `data` branch, folder `/docs`. Future pushes to this branch trigger a website deployment.
 
 ## Run locally
 
