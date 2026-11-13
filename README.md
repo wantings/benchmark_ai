@@ -1,45 +1,27 @@
-# Benchmark AI
+# Benchmark AI — publisher data
 
 **[Visit Benchmark AI](https://wantings.github.io/benchmark_ai/)**
 
-Local preview: [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
+Official publisher benchmark evidence for 2024–2026, with release counts, company score rankings, original evaluation settings, and source links. The Claude reference dataset and Evidence selector have been removed.
 
-A website for exploring publisher-reported and third-party AI benchmark scores across model versions. Source links, evaluation settings, and large score differences remain visible.
+## This branch
+
+The `data` branch contains only the static website and its required data files in `docs/`. Raw reports, downloaded HTML/PDFs, screenshots, research scripts, private workspace files and third-party review datasets are excluded.
+
+Pushing this branch does not change the current GitHub Pages deployment. To serve this version at the website link above, configure Pages to deploy from `data`, folder `/docs`, or merge the reviewed branch into the configured publishing branch.
 
 ## Run locally
 
-From the repository folder, start:
-
 ```sh
-python3 -m http.server 8080 --bind 127.0.0.1 --directory docs
+python3 -m http.server 8081 --bind 127.0.0.1 --directory docs
 ```
 
-Then open **http://127.0.0.1:8080/** in your browser. This address works only on the computer running the server. The GitHub repository is public. The website is hosted on GitHub Pages at the link above.
+Open [http://127.0.0.1:8081/](http://127.0.0.1:8081/). No build or dependencies are required.
 
-## Files and data
+## Data and interpretation
 
-The website is in `docs/`. Curated datasets and source attribution are in `docs/extracted/`. Raw downloaded HTML, screenshots, full search logs, and local research files are excluded.
+Use Download evidence on the website for the publisher JSON dataset. Source links point to official publisher reports and model cards. Model revisions, effort levels, benchmark versions and original score formats remain distinct. Percentage rankings and the specifically confirmed DeepSeek SWE aliases retain their original displayed units. Other score formats remain visible without an inferred rank.
 
-Third-party data includes Artificial Analysis public evaluations and Epoch AI data ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Original external sources retain their own attribution; see the website source library. Scores are historical snapshots, and highlighted differences are review signals rather than confirmed contradictions.
+Reporting counts describe the collected dataset. Missing evidence is not zero. Question marks open related saved publisher results awaiting inclusion review. Some 2026 cohort dates remain unverified locally; they are not verified official release dates. Historical report dates, model dates and capture dates remain separate.
 
-
-extracted/
-├── benchmarks.json                 Combined publisher dataset
-├── models.json                     Model catalog
-├── benchmark-profiles.json         Benchmark descriptions and metadata
-├── third-party-scores.json         Independent evaluation scores
-├── third-party-comparability.json  Verified comparison rules
-│
-├── openai-*-benchmarks.json         Individual publisher reports
-├── anthropic-*-benchmarks.json
-├── google-*-benchmarks.json
-├── deepseek-*-benchmarks.json
-├── glm*-benchmarks.json
-├── qwen*-benchmarks.json
-│
-├── *-source-text.txt               Text extracted from source documents
-├── benchmark-description-*.json    Description research and coverage audits
-├── qwen38-third-party-review.json  Historical model-specific review
-│
-├── web/                            Saved publisher/reference evidence
-└── third-party/                    Saved evaluator evidence
+Original publishers retain attribution for their reports and scores.
